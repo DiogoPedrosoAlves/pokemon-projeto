@@ -25,7 +25,6 @@ public class ConnectionFactory {
             }
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
-            // Credenciais lidas das variáveis de ambiente (não ficam no código)
             String url = System.getenv("DB_URL");
             String user = System.getenv("DB_USER");
             String password = System.getenv("DB_PASSWORD");

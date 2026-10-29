@@ -36,7 +36,6 @@ public class PokemonBO {
         return pokemonDAO.delete(codigo);
     }
 
-    // regra de negócio: a data da captura deve ser uma data no passado
     private boolean dataValida(PokemonTO pokemon) {
         return pokemon.getDataDaCaptura() != null
                 && pokemon.getDataDaCaptura().isBefore(LocalDate.now());
